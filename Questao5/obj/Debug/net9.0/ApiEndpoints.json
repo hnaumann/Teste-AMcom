@@ -1,0 +1,93 @@
+[
+  {
+    "ContainingType": "Questao5.Features.ContaCorrente.Command.MovimentarContaCorrenteEndpoint\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRoutes\u003Eb__0_0",
+    "RelativePath": "conta-corrente/movimentar",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movimentarContaCorrenteRequest",
+        "Type": "Questao5.Features.ContaCorrente.Command.MovimentarContaCorrenteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Questao5.Features.ContaCorrente.Command.MovimentarContaCorrenteResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "Tags": [
+      "ContaCorrente"
+    ],
+    "EndpointName": "MovimentarContaCorrente"
+  },
+  {
+    "ContainingType": "Questao5.Features.ContaCorrente.Queries.BuscarSaldoContaCorrente\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRoutes\u003Eb__0_0",
+    "RelativePath": "conta-corrente/saldo",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroConta",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Questao5.Features.ContaCorrente.Queries.BuscarSaldoContaCorrenteResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "Tags": [
+      "ContaCorrente"
+    ],
+    "EndpointName": "BuscarSaldoContaCorrente"
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Questao5.WeatherForecast, Questao5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
